@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login : Cadastro de Cliente</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/script.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <h1>Login - Cadastro de Cliente</h1>
+            <hr class="barra-horizontal"/>
+            <form id="form-cadastro" class="formulario" method="post" action="cadastro.html" onSubmit="return validarLogin()">
+                <label for="login" class="label-texto">Nome</label>
+                <input type="text" id="login" class="caixa-texto" placeholder="Login"></input>
+                <label for="senha" class="label-texto">Senha</label>
+                <input type="password" id="senha" class="caixa-texto" placeholder="Senha"></input>
+                <hr class="barra-horizontal"/>
+                <div>
+                    <input type="submit" value="Entrar" id="cadastrar" class="botao-form" />
+                    <label class="label-status-erro" id="label-login-erro"></label>
+                </div>
+                <label class="label-texto" id="label-info">Login: Admin | Senha: admin123</label>   
+            </form>
+        </div>
+    </body>
+</html>

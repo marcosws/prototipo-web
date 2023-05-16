@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+html{
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../img/background.png');
+
+}
+body{
+
+    font-family: 'Rubik', sans-serif;
+    color: rgb(255,127,39);
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+}
+#container{
+
+    margin: 40px auto;
+    position: fixed;
+    left: calc(50% - 400px);
+    width: 800px;
+    height: 600px;
+    padding: 40px 40px;
+    font-size: 14px;
+    border: 1px solid rgb(255,127,39); 
+    background-color: rgba(0,0,0,0.75);
+    border-radius: 6px;
+
+}
+.label-status-erro{
+    color: red;
+}
+.botao-form{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    width: 100px;
+    height: 25px;
+    background-color: rgb(255,127,39);
+    border: none;
+    color: white;
+}
+.caixa-texto{
+    height: 25px;
+    margin-bottom: 5px;
+    width: 200px;
+    border: 1px solid rgb(255,127,39);
+}
+.botao-form,
+.caixa-texto{
+    border-radius: 6px;
+}
+.barra-horizontal{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid rgb(255,127,39);
+}
+#label-login-erro{
+    margin-top: 5px;
+}
+#label-info{
+    margin-top: 10px;
+}

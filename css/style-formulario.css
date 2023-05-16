@@ -1,0 +1,36 @@
+
+/* fieldset ================== */
+fieldset{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(255,127,39);
+    margin-bottom: 5px;
+}
+.radiodiv{
+    margin-bottom: 5px;
+}
+#pessoa-fisica{
+    display: block;
+}
+#pessoa-juridica{
+    display: none;
+}
+#rg-tipo-cadastro{
+    width: 300px;
+    border-radius: 10px;
+}
+legend{
+    margin-left: 10px;
+    margin-bottom: 6px;
+}
+/* campos do formularios ======== */
+#nome,
+#nome-fantasia,
+#razao-social{
+    width: 350px;
+}
+.checkbox-form{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
