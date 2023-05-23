@@ -8,6 +8,10 @@ function validarLogin(){
         sessionStorage.setItem('logado', true);
         return true;
     }
+    else if(login === '' && senha === ''){
+        document.getElementById('label-login-erro').innerHTML = 'Entre com o login e senha!';
+        return false;
+    }
     else{
         document.getElementById('label-login-erro').innerHTML = 'Login ou senha inválidos!';
         return false;

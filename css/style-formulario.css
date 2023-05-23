@@ -34,3 +34,13 @@ legend{
     margin-top: 5px;
     margin-bottom: 10px;
 }
+.botao-form-head{
+    float: right;
+}
+#carregando{
+    margin-top: 30%;
+    text-align: center;
+}
+.label-consulta{
+    margin-top: 5px;
+}
