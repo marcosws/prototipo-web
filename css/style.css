@@ -1,30 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
-
-
 *{
-
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
-html{
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('../img/background.png');
-
+html, body{
+    height: 100%;
 }
 body{
-
+    background-color: black;
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: 'Rubik', sans-serif;
     color: rgb(255,127,39);
-
 }
 form{
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: left;
+}
+footer{
+    border-top: 2px black;
+    padding-top: 10px;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0,0,0,0.75);;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 #container{
 
@@ -54,10 +62,14 @@ form{
     color: white;
 }
 .caixa-texto{
+    font-weight: bold;
+    color: rgb(255,127,39);
     height: 25px;
     margin-bottom: 5px;
+    padding-left: 5px;
     width: 200px;
     border: 1px solid rgb(255,127,39);
+    
 }
 .botao-form-head,
 .botao-form,
