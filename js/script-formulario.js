@@ -18,7 +18,21 @@ function selecionarTipoCadastro(){
     } 
 
 }
+function limparCampos(){
+            
+    document.getElementById('nome').value = "";
+    document.getElementById('cpf').value = "";
+    document.getElementById('telefone').value = "";
+    document.getElementById('celular').value = "";  
+    document.getElementById('email').value = "";
+    document.getElementById('nome-fantasia').value = "";
+    document.getElementById('razao-social').value = "";
+    document.getElementById('cnpj').value = "";
+    document.getElementById('check-informacoes-mail').checked = false;
+    document.getElementById('check-notificacoes-celular').checked = false;
+    limpaStatus();
 
+}
 function limpaStatus(){
 			
     document.getElementById('status-nome').innerHTML = "";
@@ -166,6 +180,7 @@ function validarFormulario(){
             sessionStorage.setItem('email', email.value);
             sessionStorage.setItem('informacoesEmail', informacoesEmail.checked);
             sessionStorage.setItem('notificacoesCelular', notificacoesCelular.checked);
+            sessionStorage.setItem('formulario', 'enviando');
 
         }
     }
@@ -200,7 +215,7 @@ function carregarInformacoes(){
         htmlConsulta +=`
         <label class="label-consulta">Nome Fantasia: ` + nomeFantasia + `</label>
         <label class="label-consulta">Razão Social: ` + razaoSocial + `</label>
-        <label class="label-consulta">CNPJ: ` + cnpj.value + `</label>`;
+        <label class="label-consulta">CNPJ: ` + cnpj + `</label>`;
     }
     htmlConsulta +=`
     <label class="label-consulta">Telefone: ` + telefone + `</label>
@@ -218,7 +233,8 @@ function carregarInformacoes(){
 
 }
 function novoCadastro(){
-
+    sessionStorage.setItem('formulario', '');
+    window.location.href = 'cadastro.html';
 }
 /*
 if(valida){

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Enviando...</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            background-image: url('img/background.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .loading-icon {
+            border: 8px solid #808080;
+            border-top: 8px solid rgb(255,127,39);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .loading-text {
+            margin-top: 15px;
+            font-size: 18px;
+            color: rgb(255,127,39);
+        }
+        #container{
+
+            width: 600px;
+            height: 300px;
+            border: 1px solid rgb(255,127,39); 
+            background-color: rgba(0,0,0,0.75);
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="loading-icon"></div>
+        <div class="loading-text">Carregando, por favor aguarde...</div>
+    </div>
+
+    <script>
+
+        // Verifica se o formulário já foi enviado
+        if(sessionStorage.getItem('formulario') === 'enviando') {
+            
+            // Tempo de espera (em milissegundos)
+            const TEMPO_ESPERA = 7000; // 7 segundos
+
+            // Página de destino após o carregamento
+            const URL_DESTINO = "consulta.html";
+
+            // Redireciona após o tempo definido
+            setTimeout(() => {
+                window.location.href = URL_DESTINO;
+            }, TEMPO_ESPERA);
+            sessionStorage.setItem('formulario', 'enviado');
+        } 
+        else {
+            // Se o formulário não foi enviado, redireciona para a página de cadastro   
+            window.location.href = 'cadastro.html';
+        }
+    </script>
+
+</body>
+</html>

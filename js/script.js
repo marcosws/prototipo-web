@@ -21,3 +21,13 @@ function logadoOK(){
     if(!sessionStorage.getItem('logado'))
         window.location.href = 'index.html';
 }
+
+function formalarioEnviadoOK(){
+    if(sessionStorage.getItem('formulario') !== 'enviado')
+         window.location.href = 'cadastro.html';
+}
+
+function logout(){
+    sessionStorage.removeItem('logado');
+    window.location.href = 'index.html';
+}
