@@ -188,6 +188,8 @@ function validarFormulario(){
 }
 function carregarInformacoes(){
 
+    window.location.href = 'enviando.html';
+
     let cadastroPf = sessionStorage.getItem('cadastroPf');
     let cadastroPj = sessionStorage.getItem('cadastroPj');
     let nome = sessionStorage.getItem('nome');
