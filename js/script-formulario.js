@@ -201,7 +201,6 @@ function carregarInformacoes(){
     let informacoesEmail = sessionStorage.getItem('informacoesEmail');
     let notificacoesCelular = sessionStorage.getItem('notificacoesCelular');
 
-
     let formCadastro = document.getElementById('form-cadastro');
     let htmlConsulta = `   
     <h3 class="label-consulta">Cliente Cadastrado</h3>

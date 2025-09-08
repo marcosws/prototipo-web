@@ -22,13 +22,6 @@ function logadoOK(){
         window.location.href = 'index.html';
 }
 
-function formularioEnviadoOK(){
-    if(sessionStorage.getItem('formulario') === 'enviando')
-        window.location.href = 'enviar.html';
-    else if(sessionStorage.getItem('formulario') !== 'enviado')
-         window.location.href = 'cadastro.html';
-}
-
 function logout(){
     sessionStorage.removeItem('logado');
     window.location.href = 'index.html';
